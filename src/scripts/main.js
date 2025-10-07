@@ -16,7 +16,7 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   notify.style.right = `${posRight}px`;
 
   setTimeout(() => {
-    notify.remove();
+    notify.style.display = 'none';
   }, 2000);
 };
 
